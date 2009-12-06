@@ -8,6 +8,6 @@ jQuery Litebox is an ultra-lightweight no-BS lightbox implementation.  It requir
 
 ## License
 
-The SHA256 plugin is Distributed under the terms of new [BSD License](http://www.opensource.org/licenses/bsd-license.php).
+Litebox is Distributed under the terms of new [BSD License](http://www.opensource.org/licenses/bsd-license.php).
 
 Copyright (c) 2009 [Alex Weber](http://alexweber.com.br)
