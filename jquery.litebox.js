@@ -1,7 +1,7 @@
 /**
  * Litebox Plugin
  *
- * @version 0.1 (01/12/2009)
+ * @version 0.2 (07/12/2009)
  * @requires jQuery v1.3.2+
  * @author Alex Weber <alexweber.com.br>
  * @copyright Copyright (c) 2009, Alex Weber
@@ -51,7 +51,7 @@
             overlayOpacity : '0.8', // overlay opacity
             overlayShowSpeed : 300, // overlay show animation speed
             overlayHideSpeed : 900, // overlay hide animation speed
-            liteboxShowSpeed : 500, // litebox show animation speed
+            liteboxShowSpeed : 450, // litebox show animation speed
             liteboxHideSpeed : 500 // litebox hide animation speed
         };
 
@@ -69,7 +69,6 @@
             var t = $(this), tw, th, targetCache = $('#'+settings.target);
             // hide the target (just in case)
             targetCache.hide();
-
             // calculate target width and height
             tw = (targetCache.width() + parseInt(targetCache.css('paddingLeft').replace('px','')) + parseInt(targetCache.css('paddingRight').replace('px',''))) / 2;
             th = (targetCache.height() + parseInt(targetCache.css('paddingTop').replace('px','')) + parseInt(targetCache.css('paddingBottom').replace('px',''))) / 2;
@@ -89,7 +88,7 @@
                 // create html for the lightbox
                 overlay = '<div id="'+settings.overlay+'" style="opacity:'+settings.overlayOpacity+';height: 100%;width: 100%;background: #'+settings.overlayBg+';display: none;position: fixed;top: 0;left: 0;"><div id="'+settings.target+'" style="position: absolute;left:'+left+'px;top:'+top+'px;">'+$.data(t.get(0), 'litebox')+'</div></div>';
                 // append the overlay to the dom and show it
-                $('body').append(overlay).find('#overlay').fadeIn(settings.overlayShowSpeed, function(){
+                $('body').append(overlay).find('#'+settings.overlay).find('#'+settings.target).hide().end().fadeIn(settings.overlayShowSpeed, function(){
                     // when its done show the litebox
                     $('#'+settings.target).slideDown(settings.liteboxShowSpeed);
                 });
