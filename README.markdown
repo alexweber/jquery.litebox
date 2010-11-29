@@ -2,8 +2,10 @@
 
 jQuery Litebox is an ultra-lightweight no-BS lightbox implementation.  It requires no stylesheets and minimal configuration. It's currently not tested in IE6 so don't bother! (hey I did say no BS right?)
 
+It's more a proof-of-concept than anything to show just how "simple" creating a lightbox effect is.
+
 * Requires jQuery 1.3+
-* Docs: [http://www.alexweber.com.br/jquery/litebox](http://www.alexweber.com.br/jquery/litebox)
+* Docs: [http://code.alexweber.com.br/jquery/litebox](http://code.alexweber.com.br/jquery/litebox)
 
 
 ## License
